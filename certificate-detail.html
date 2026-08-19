@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Details — Yusuf Ali Aşkın</title>
+    <meta name="description" content="Verified technical certification details, skills acquired, and official credential verification for Yusuf Ali Aşkın.">
+    <meta name="author" content="Yusuf Ali Aşkın">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logom.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/theme.js"></script>
+</head>
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-bar" id="reading-progress" aria-hidden="true"></div>
+    <div id="navbar"></div>
+
+    <!-- Certificate Header & Meta -->
+    <header class="work-post-header">
+        <div class="container">
+            <div class="work-header-top-nav">
+                <a href="certificates.html" class="work-back-btn" aria-label="Back to all certificates">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <span data-i18n="certBackBtn">Back to Certificates</span>
+                </a>
+            </div>
+
+            <div class="work-post-meta">
+                <span class="work-category-badge" id="cert-issuer-badge"></span>
+                <span class="cert-level-tag" id="cert-level-badge" style="background: var(--bg-card); padding: 4px 12px; border-radius: var(--radius-full); border: 1px solid var(--border);"></span>
+            </div>
+
+            <h1 class="work-article-title" id="cert-title"></h1>
+            <p class="work-lead-description" id="cert-lead-desc"></p>
+        </div>
+    </header>
+
+    <!-- Main Certificate Body (2-Column Dashboard) -->
+    <main class="container">
+        <div class="cert-detail-grid">
+            <!-- Left: Visual Showcase & Verification Action -->
+            <div class="cert-showcase-column">
+                <div class="card card-accent cert-showcase-card reveal">
+                    <div class="cert-showcase-frame">
+                        <img src="" alt="" class="cert-showcase-img" id="cert-image">
+                    </div>
+                    <div class="cert-showcase-actions">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" id="cert-verify-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            <span data-i18n="certVerifyOfficial">Verify on Official Portal</span>
+                        </a>
+                        <a href="certificates.html" class="btn btn-secondary btn-block" data-i18n="certBackCatalog">
+                            Browse All Certifications
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Metadata & Skills Information -->
+            <div class="cert-info-column">
+                <!-- Metadata Spec Card -->
+                <div class="work-detail-card reveal">
+                    <div class="work-detail-card-header">
+                        <div class="work-detail-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="work-detail-card-title" data-i18n="certSpecsTitle">Credential Specification</h3>
+                    </div>
+                    <div class="cert-specs-table">
+                        <div class="cert-spec-row">
+                            <span class="cert-spec-label" data-i18n="certIssuerLabel">Issuing Organization</span>
+                            <span class="cert-spec-value" id="cert-spec-issuer"></span>
+                        </div>
+                        <div class="cert-spec-row">
+                            <span class="cert-spec-label" data-i18n="certCategoryLabel">Technical Domain</span>
+                            <span class="cert-spec-value" id="cert-spec-category"></span>
+                        </div>
+                        <div class="cert-spec-row">
+                            <span class="cert-spec-label" data-i18n="certDateLabel">Issued Date</span>
+                            <span class="cert-spec-value" id="cert-spec-date"></span>
+                        </div>
+                        <div class="cert-spec-row">
+                            <span class="cert-spec-label" data-i18n="certLevelLabel">Proficiency Level</span>
+                            <span class="cert-spec-value" id="cert-spec-level"></span>
+                        </div>
+                        <div class="cert-spec-row">
+                            <span class="cert-spec-label" data-i18n="certStatusLabel">Verification Status</span>
+                            <span class="cert-spec-value" style="color: var(--accent); font-weight: 700;">✓ Verified Authority</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acquired Skills Matrix -->
+                <div class="work-detail-card reveal" style="margin-top: 1.5rem;">
+                    <div class="work-detail-card-header">
+                        <div class="work-detail-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="work-detail-card-title" data-i18n="certSkillsTitle">Acquired Competencies & Technologies</h3>
+                    </div>
+                    <div class="work-techs-container" id="cert-skills-list">
+                        <!-- Rendered by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Certificates Section -->
+    <section class="section related-works-section" style="margin-top: 4rem;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label" data-i18n="certRelatedLabel">Related Credentials</span>
+                <h2 data-i18n="certRelatedTitle">More Certifications from this Track</h2>
+            </div>
+            <div class="cert-compact-grid" id="related-certs-grid">
+                <!-- Rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

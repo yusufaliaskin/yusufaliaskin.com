@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details — Yusuf Ali Aşkın</title>
+    <meta name="description" content="Detailed engineering architecture, problem statement, and solution for projects by Yusuf Ali Aşkın.">
+    <meta name="author" content="Yusuf Ali Aşkın">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logom.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/theme.js"></script>
+</head>
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-bar" id="reading-progress" aria-hidden="true"></div>
+    <div id="navbar"></div>
+
+    <!-- Project Header & Meta -->
+    <header class="work-post-header">
+        <div class="container">
+            <div class="work-header-top-nav">
+                <a href="works.html" class="work-back-btn" aria-label="Back to all works">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <span data-i18n="workBackBtn">Back to Works</span>
+                </a>
+            </div>
+
+            <div class="work-post-meta">
+                <span class="work-category-badge" id="work-category"></span>
+            </div>
+
+            <h1 class="work-article-title" id="work-title"></h1>
+            <p class="work-lead-description" id="work-description"></p>
+        </div>
+    </header>
+
+    <!-- Main Project Body -->
+    <main class="container">
+        <div class="work-article-wrapper">
+            <!-- Problem & Solution Overview Grid -->
+            <div class="work-overview-grid">
+                <!-- Problem Card -->
+                <div class="work-detail-card" id="work-problem-card">
+                    <div class="work-detail-card-header">
+                        <div class="work-detail-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3 class="work-detail-card-title" data-i18n="workProblemLabel">Problem & Challenge</h3>
+                    </div>
+                    <div class="work-detail-card-body" id="work-problem-body">
+                        <!-- Rendered by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Solution Card -->
+                <div class="work-detail-card" id="work-solution-card">
+                    <div class="work-detail-card-header">
+                        <div class="work-detail-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="work-detail-card-title" data-i18n="workSolutionLabel">Engineered Solution & Architecture</h3>
+                    </div>
+                    <div class="work-detail-card-body" id="work-solution-body">
+                        <!-- Rendered by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Interactive System Architecture Flow Diagram -->
+            <div class="arch-flow-wrapper reveal" id="arch-flow-section">
+                <div class="arch-flow-header">
+                    <div class="arch-flow-header-left">
+                        <div class="work-detail-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="work-detail-card-title" data-i18n="archFlowTitle">Interactive System Architecture Flow</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 2px;" data-i18n="archFlowSubtitle">End-to-end data pipeline and security perimeter</p>
+                        </div>
+                    </div>
+                    <div class="telemetry-pulse-status">
+                        <span class="radar-live-dot"></span>
+                        <span style="font-size: 0.72rem;">ACTIVE PIPELINE</span>
+                    </div>
+                </div>
+
+                <div class="arch-flow-grid">
+                    <!-- Node 1: Client -->
+                    <div class="arch-node">
+                        <div class="arch-node-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <div class="arch-node-title" data-i18n="archClientTitle">Client / UI Layer</div>
+                        <div class="arch-node-desc" data-i18n="archClientDesc">Vanilla JS, Responsive UI</div>
+                        <span class="arch-node-tag">HTTPS / TLS 1.3</span>
+                    </div>
+
+                    <!-- Node 2: Gateway -->
+                    <div class="arch-node">
+                        <div class="arch-node-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="arch-node-title" data-i18n="archGatewayTitle">API Gateway & Auth</div>
+                        <div class="arch-node-desc" data-i18n="archGatewayDesc">Rate Limit & Token Auth</div>
+                        <span class="arch-node-tag">Zero-Trust WAF</span>
+                    </div>
+
+                    <!-- Node 3: Core & Multi-LLM Engine -->
+                    <div class="arch-node">
+                        <div class="arch-node-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <div class="arch-node-title" data-i18n="archCoreTitle">Core Processing & AI</div>
+                        <div class="arch-node-desc" data-i18n="archCoreDesc">Multi-LLM & Threat Engine</div>
+                        <span class="arch-node-tag">Asynchronous Task</span>
+                    </div>
+
+                    <!-- Node 4: Storage & SIEM -->
+                    <div class="arch-node">
+                        <div class="arch-node-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <div class="arch-node-title" data-i18n="archDbTitle">Database & SIEM</div>
+                        <div class="arch-node-desc" data-i18n="archDbDesc">Encrypted Vault & Logs</div>
+                        <span class="arch-node-tag">AES-256 Vault</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features Card -->
+            <div class="work-detail-card work-features-card" id="work-features-card">
+                <div class="work-detail-card-header">
+                    <div class="work-detail-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="work-detail-card-title" data-i18n="workFeaturesLabel">Key Capabilities & Features</h3>
+                </div>
+                <div class="work-features-list" id="work-features-list">
+                    <!-- Rendered by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Tech Stack Pill Matrix Card -->
+            <div class="work-detail-card work-techs-card" id="work-techs-card">
+                <div class="work-detail-card-header">
+                    <div class="work-detail-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="work-detail-card-title" data-i18n="workTechStackLabel">Technologies & Frameworks</h3>
+                </div>
+                <div class="work-techs-container" id="work-techs-container">
+                    <!-- Rendered by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Action Buttons (GitHub / Live Demo) -->
+            <div class="work-actions-bar" id="work-actions-bar">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="work-github-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span data-i18n="workSourceCode">View Source Code</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="work-demo-btn" style="display: none;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <span data-i18n="workLiveDemo">Launch Live Demo</span>
+                </a>
+            </div>
+
+            <!-- Author Signature Box -->
+            <div class="card blog-author-card">
+                <div class="author-avatar-wrap">
+                    <img src="assets/images/logom.svg" alt="Yusuf Ali Aşkın Logo" class="author-avatar-img">
+                </div>
+                <div class="author-info-text">
+                    <h4 class="author-name">Yusuf Ali Aşkın</h4>
+                    <p class="author-role" data-i18n="heroSubtitle">Senior Software Engineer & Cybersecurity Specialist</p>
+                    <p class="author-bio" data-i18n="aboutPreviewText">Architecting resilient software systems, proactive cybersecurity solutions, and scalable intelligent digital infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Projects Section -->
+    <section class="section related-works-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label" data-i18n="workRelatedTitle">Related Engineering Works</span>
+                <h3 data-i18n="workRelatedSubtitle">Explore more systems and security architectures</h3>
+            </div>
+            <div class="projects-grid related-works-grid" id="related-projects">
+                <!-- Rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <button class="back-to-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

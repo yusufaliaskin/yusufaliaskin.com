@@ -1,0 +1,150 @@
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand" aria-label="Home">
+            <div class="brand-logo-frame">
+                <img src="assets/images/logom.svg" alt="Logo" class="brand-logo-img">
+            </div>
+        </a>
+
+        <div class="navbar-nav" id="navbar-nav-container">
+            <div class="nav-indicator" id="nav-indicator"></div>
+            <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+            <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+            <a href="works.html" class="nav-link" data-i18n="navWorks">Works</a>
+            <a href="certificates.html" class="nav-link" data-i18n="navCertificates">Certificates</a>
+            <a href="blog.html" class="nav-link" data-i18n="navBlog">Blog</a>
+            <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+        </div>
+
+        <div class="navbar-actions">
+            <!-- Direct 3D Flip Language Flag Button (Single Click, Instant Animated Switch) -->
+            <button class="lang-flag-direct-btn lang-toggle" id="lang-direct-toggle" aria-label="Switch Language" title="Türkçe / English">
+                <span class="flag-flip-cube">
+                    <span class="flag-face flag-face-tr">
+                        <svg viewBox="0 0 60 30" preserveAspectRatio="none">
+                            <rect width="60" height="30" fill="#E30A17"/>
+                            <circle cx="23" cy="15" r="7.5" fill="#FFFFFF"/>
+                            <circle cx="25" cy="15" r="6" fill="#E30A17"/>
+                            <polygon points="29.5,15 27,13.2 28,16.1 25.5,14.4 28.7,14.4 26.3,16.1 27,13.2" fill="#FFFFFF" transform="rotate(18 27.5 15)"/>
+                        </svg>
+                    </span>
+                    <span class="flag-face flag-face-en">
+                        <svg viewBox="0 0 60 30" preserveAspectRatio="none">
+                            <rect width="60" height="30" fill="#012169"/>
+                            <path d="M0 0 L60 30 M60 0 L0 30" stroke="#FFFFFF" stroke-width="6"/>
+                            <path d="M0 0 L60 30" stroke="#C8102E" stroke-width="3.5"/>
+                            <path d="M60 0 L0 30" stroke="#C8102E" stroke-width="3.5"/>
+                            <path d="M30 0 V30 M0 15 H60" stroke="#FFFFFF" stroke-width="9"/>
+                            <path d="M30 0 V30 M0 15 H60" stroke="#C8102E" stroke-width="5.5"/>
+                        </svg>
+                    </span>
+                </span>
+            </button>
+
+            <!-- Modern Vertical Divider (|) -->
+            <div class="navbar-divider" aria-hidden="true"></div>
+
+            <!-- Day / Night Sun-Moon Animated Toggle Switch -->
+            <button class="theme-daynight-switch theme-toggle" aria-label="Toggle theme">
+                <span class="daynight-track">
+                    <!-- Day Clouds -->
+                    <span class="daynight-clouds">
+                        <span class="dn-cloud dn-cloud-1"></span>
+                        <span class="dn-cloud dn-cloud-2"></span>
+                        <span class="dn-cloud dn-cloud-3"></span>
+                    </span>
+                    <!-- Night Stars -->
+                    <span class="daynight-stars">
+                        <span class="dn-star dn-star-1"></span>
+                        <span class="dn-star dn-star-2"></span>
+                        <span class="dn-star dn-star-3"></span>
+                        <span class="dn-star dn-star-4"></span>
+                        <span class="dn-star dn-star-5"></span>
+                    </span>
+                    <!-- Sun / Moon Knob -->
+                    <span class="daynight-knob">
+                        <span class="knob-sun"></span>
+                        <span class="knob-moon">
+                            <span class="dn-crater dn-crater-1"></span>
+                            <span class="dn-crater dn-crater-2"></span>
+                            <span class="dn-crater dn-crater-3"></span>
+                        </span>
+                    </span>
+                </span>
+            </button>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a>
+        <a href="about.html" class="mobile-nav-link" data-i18n="navAbout">About</a>
+        <a href="works.html" class="mobile-nav-link" data-i18n="navWorks">Works</a>
+        <a href="certificates.html" class="mobile-nav-link" data-i18n="navCertificates">Certificates</a>
+        <a href="blog.html" class="mobile-nav-link" data-i18n="navBlog">Blog</a>
+        <a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a>
+    </div>
+    <div class="mobile-menu-actions">
+        <!-- Mobile Direct 3D Flip Language Flag Button -->
+        <button class="lang-flag-direct-btn lang-toggle" aria-label="Switch Language" title="Türkçe / English">
+            <span class="flag-flip-cube">
+                <span class="flag-face flag-face-tr">
+                    <svg viewBox="0 0 60 30" preserveAspectRatio="none">
+                        <rect width="60" height="30" fill="#E30A17"/>
+                        <circle cx="23" cy="15" r="7.5" fill="#FFFFFF"/>
+                        <circle cx="25" cy="15" r="6" fill="#E30A17"/>
+                        <polygon points="29.5,15 27,13.2 28,16.1 25.5,14.4 28.7,14.4 26.3,16.1 27,13.2" fill="#FFFFFF" transform="rotate(18 27.5 15)"/>
+                    </svg>
+                </span>
+                <span class="flag-face flag-face-en">
+                    <svg viewBox="0 0 60 30" preserveAspectRatio="none">
+                        <rect width="60" height="30" fill="#012169"/>
+                        <path d="M0 0 L60 30 M60 0 L0 30" stroke="#FFFFFF" stroke-width="6"/>
+                        <path d="M0 0 L60 30" stroke="#C8102E" stroke-width="3.5"/>
+                        <path d="M60 0 L0 30" stroke="#C8102E" stroke-width="3.5"/>
+                        <path d="M30 0 V30 M0 15 H60" stroke="#FFFFFF" stroke-width="9"/>
+                        <path d="M30 0 V30 M0 15 H60" stroke="#C8102E" stroke-width="5.5"/>
+                    </svg>
+                </span>
+            </span>
+        </button>
+
+        <!-- Modern Vertical Divider (|) -->
+        <div class="navbar-divider" aria-hidden="true"></div>
+
+        <!-- Mobile Theme Switch -->
+        <button class="theme-daynight-switch theme-toggle" aria-label="Toggle theme">
+            <span class="daynight-track">
+                <span class="daynight-clouds">
+                    <span class="dn-cloud dn-cloud-1"></span>
+                    <span class="dn-cloud dn-cloud-2"></span>
+                    <span class="dn-cloud dn-cloud-3"></span>
+                </span>
+                <span class="daynight-stars">
+                    <span class="dn-star dn-star-1"></span>
+                    <span class="dn-star dn-star-2"></span>
+                    <span class="dn-star dn-star-3"></span>
+                    <span class="dn-star dn-star-4"></span>
+                    <span class="dn-star dn-star-5"></span>
+                </span>
+                <span class="daynight-knob">
+                    <span class="knob-sun"></span>
+                    <span class="knob-moon">
+                        <span class="dn-crater dn-crater-1"></span>
+                        <span class="dn-crater dn-crater-2"></span>
+                        <span class="dn-crater dn-crater-3"></span>
+                    </span>
+                </span>
+            </span>
+        </button>
+    </div>
+</div>

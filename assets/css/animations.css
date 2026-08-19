@@ -1,0 +1,313 @@
+/* ============================================
+   ANIMATIONS — Apple & Linear $100K Motion System
+   animations.css — Cinematic scroll reveals, spotlight glow & physics
+   ============================================ */
+
+/* ============================================
+   1. Keyframes
+   ============================================ */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blurIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(26px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes floatSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes glowPulse {
+    0%, 100% { opacity: 0.5; transform: scale(0.98); }
+    50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+/* ============================================
+   2. Cinematic Scroll Reveal Classes (Apple Easing)
+   ============================================ */
+
+/* Standard smooth blur-in reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Left reveal */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-24px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Right reveal */
+.reveal-right {
+    opacity: 0;
+    transform: translateX(24px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scale reveal */
+.reveal-scale {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-scale.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered items container */
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-stagger.revealed > *:nth-child(1) { transition-delay: 30ms; }
+.reveal-stagger.revealed > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger.revealed > *:nth-child(3) { transition-delay: 130ms; }
+.reveal-stagger.revealed > *:nth-child(4) { transition-delay: 180ms; }
+.reveal-stagger.revealed > *:nth-child(5) { transition-delay: 230ms; }
+.reveal-stagger.revealed > *:nth-child(6) { transition-delay: 280ms; }
+.reveal-stagger.revealed > *:nth-child(7) { transition-delay: 330ms; }
+.reveal-stagger.revealed > *:nth-child(8) { transition-delay: 380ms; }
+
+.reveal-stagger.revealed > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   2.1 Linear.app Style Mouse Spotlight Glow
+   ============================================ */
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: radial-gradient(
+        360px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        var(--accent-subtle),
+        transparent 60%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.spotlight-card:hover::before {
+    opacity: 1;
+}
+
+.spotlight-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   3. Hero Entrance Animations
+   ============================================ */
+.hero-animate .status-badge {
+    animation: blurIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+}
+
+.hero-animate .hero-subtitle {
+    animation: blurIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
+}
+
+.hero-animate h1,
+.hero-animate .hero-main-title {
+    animation: blurIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both;
+}
+
+.hero-animate .hero-description {
+    animation: blurIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
+}
+
+.hero-animate .hero-buttons {
+    animation: blurIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.hero-animate .hero-social {
+    animation: blurIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.62s both;
+}
+
+/* Page hero entrance */
+.page-hero .section-label {
+    animation: blurIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.page-hero h1 {
+    animation: blurIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.page-hero p {
+    animation: blurIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+}
+
+/* ============================================
+   4. View Transition API — Shockwave Theme Ripple
+   ============================================ */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+    z-index: 1;
+}
+
+::view-transition-new(root) {
+    z-index: 9999;
+}
+
+/* Rotating icon on theme switch */
+.theme-toggle.rotating svg {
+    animation: rotateThemeIcon 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes rotateThemeIcon {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Instant snapshot syncing during theme view-transition */
+.in-theme-transition,
+.in-theme-transition * {
+    transition: none !important;
+}
+
+/* ============================================
+   5. Interactive Elements & Cards
+   ============================================ */
+.card {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.25s ease,
+                background-color 0.25s ease;
+}
+
+.btn {
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.2s ease,
+                border-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ============================================
+   6. Language Switch Slow Cinematic Morph Animation
+   ============================================ */
+.lang-swapping [data-i18n],
+.lang-swapping .project-card,
+.lang-swapping .blog-card,
+.lang-swapping .expertise-card,
+.lang-swapping .hero-content,
+.lang-swapping .modal {
+    opacity: 0.15;
+    filter: blur(6px);
+    transform: translateY(6px);
+    transition: opacity 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================
+   6. Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+
+    .reveal-stagger > * {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+
+    .hero-animate * {
+        animation: none;
+        opacity: 1;
+        filter: none;
+    }
+}

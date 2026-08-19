@@ -1,0 +1,90 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Dark Gradient -->
+  <rect width="1200" height="630" fill="#0A0A0C"/>
+  <radialGradient id="bg-glow" cx="0.5" cy="0" r="0.8" fx="0.5" fy="0">
+    <stop offset="0%" stop-color="#E25822" stop-opacity="0.25"/>
+    <stop offset="60%" stop-color="#141418" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#bg-glow)"/>
+
+  <!-- Subtle Engineering Grid -->
+  <g opacity="0.08">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+
+  <!-- Modern Card Container Frame -->
+  <rect x="60" y="50" width="1080" height="530" rx="24" fill="#121216" stroke="#26262F" stroke-width="2"/>
+  <rect x="60" y="50" width="1080" height="530" rx="24" fill="none" stroke="url(#card-border)" stroke-width="2"/>
+
+  <linearGradient id="card-border" x1="60" y1="50" x2="1140" y2="580" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#E25822" stop-opacity="0.6"/>
+    <stop offset="40%" stop-color="#26262F" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#E25822" stop-opacity="0.3"/>
+  </linearGradient>
+
+  <!-- Top Status Badge -->
+  <g transform="translate(100, 95)">
+    <rect width="260" height="36" rx="18" fill="#1F1510" stroke="#E25822" stroke-width="1"/>
+    <circle cx="18" cy="18" r="5" fill="#10B981"/>
+    <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#E25822" letter-spacing="0.5">OPEN FOR ENGINEERING WORK</text>
+  </g>
+
+  <!-- Brand Logo & Header -->
+  <g transform="translate(100, 160)">
+    <!-- Logo Hexagon/Frame -->
+    <rect width="70" height="70" rx="16" fill="#1A1A22" stroke="#E25822" stroke-width="2"/>
+    <text x="35" y="46" font-family="'JetBrains Mono', monospace, sans-serif" font-size="30" font-weight="800" fill="#E25822" text-anchor="middle">YA</text>
+
+    <!-- Name -->
+    <text x="95" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-1">YUSUF ALİ AŞKIN</text>
+    <text x="95" y="66" font-family="'JetBrains Mono', monospace, sans-serif" font-size="16" font-weight="500" fill="#8E8E9F" letter-spacing="0.5">Senior Software Engineer &amp; Cybersecurity Specialist</text>
+  </g>
+
+  <!-- Summary Description -->
+  <text x="100" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="400" fill="#B0B0C0" line-height="34">
+    <tspan x="100" dy="0">Building resilient distributed software systems, proactive cybersecurity architectures,</tspan>
+    <tspan x="100" dy="34">and high-performance Multi-LLM AI developer platforms.</tspan>
+  </text>
+
+  <!-- Technical Pill Badges -->
+  <g transform="translate(100, 390)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="42" rx="21" fill="#181820" stroke="#2D2D3A" stroke-width="1"/>
+      <text x="90" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#F0F0F5" text-anchor="middle">⚡ Multi-LLM Systems</text>
+    </g>
+
+    <!-- Pill 2 -->
+    <g transform="translate(195, 0)">
+      <rect width="180" height="42" rx="21" fill="#181820" stroke="#2D2D3A" stroke-width="1"/>
+      <text x="90" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#F0F0F5" text-anchor="middle">🛡️ Zero-Trust Security</text>
+    </g>
+
+    <!-- Pill 3 -->
+    <g transform="translate(390, 0)">
+      <rect width="170" height="42" rx="21" fill="#181820" stroke="#2D2D3A" stroke-width="1"/>
+      <text x="85" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#F0F0F5" text-anchor="middle">🌐 Network Defense</text>
+    </g>
+
+    <!-- Pill 4 -->
+    <g transform="translate(575, 0)">
+      <rect width="170" height="42" rx="21" fill="#181820" stroke="#2D2D3A" stroke-width="1"/>
+      <text x="85" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#F0F0F5" text-anchor="middle">🐍 Python &amp; Full Stack</text>
+    </g>
+
+    <!-- Pill 5 -->
+    <g transform="translate(760, 0)">
+      <rect width="180" height="42" rx="21" fill="#181820" stroke="#2D2D3A" stroke-width="1"/>
+      <text x="90" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#F0F0F5" text-anchor="middle">🏆 Verified Credentials</text>
+    </g>
+  </g>
+
+  <!-- Footer URL Strip -->
+  <g transform="translate(100, 500)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace, sans-serif" font-size="16" font-weight="600" fill="#E25822">yusufaliaskin.github.io</text>
+    <text x="260" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#6A6A7A">• İstanbul, Turkey • github.com/yusufaliaskin</text>
+  </g>
+</svg>
